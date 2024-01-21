@@ -34,7 +34,7 @@
     {
       "phase": "CodeReview",
       "phaseType": "ComposedPhase",
-      "cycleNum": 1,
+      "cycleNum": 3,
       "Composition": [
         {
           "phase": "CodeReviewComment",

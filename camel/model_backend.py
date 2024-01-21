@@ -16,11 +16,13 @@ from typing import Any, Dict
 
 import openai
 import tiktoken
+import os
+import time
 
 from camel.typing import ModelType
 from chatdev.statistics import prompt_cost
 from chatdev.utils import log_and_print_online
-
+from dotenv import load_dotenv
 
 class ModelBackend(ABC):
     r"""Base class for different model backends.
@@ -67,11 +69,12 @@ class OpenAIModel(ModelBackend):
         num_max_token = num_max_token_map[self.model_type.value]
         num_max_completion_tokens = num_max_token - num_prompt_tokens
         self.model_config_dict['max_tokens'] = num_max_completion_tokens
-
+        load_dotenv()
+        time.sleep(20)
         try:
-            response = openai.ChatCompletion.create(*args, **kwargs, model=self.model_type.value, **self.model_config_dict)
+            response = openai.ChatCompletion.create(*args, **kwargs, engine=os.getenv("OPENAI_API_ENGINE"), **self.model_config_dict)
         except AttributeError:
-            response = openai.chat.completions.create(*args, **kwargs, model=self.model_type.value, **self.model_config_dict)
+            response = openai.chat.completions.create(*args, **kwargs, engine=os.getenv("OPENAI_API_ENGINE"), **self.model_config_dict)
 
         cost = prompt_cost(
                 self.model_type.value, 

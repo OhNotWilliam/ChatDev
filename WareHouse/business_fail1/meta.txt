@@ -1,0 +1,83 @@
+Task:
+
+Introduction
+1.1 Purpose
+This document specifies the clear requirements for a software that is supposed to be developed by a fully automated AI programmer.
+1.2 Scope
+	In-N-Out is a program that takes a “name.csv” document as input, transposes it, and saves it as “transposed_name.csv” locally.
+1.3 Definitions, Acronyms, and Abbreviations
+List and define all terms, acronyms, and abbreviations used in this document.
+1.4 Overview
+The software works through python, applying a streamlit frontend. It has an input field to upload the csv file, uses error handling to ensure it is a csv file, starts the work on clicking a submit button and lets the user download the file once done.
+It is creating a requirements.txt file to pip install from
+Overall Description
+2.1 Product Perspective
+	A user has a csv file that needs to be worked on. The user starts the program from a python window, after having installed all required packages using pip install requirements.txt. The program converts the csv file and lets the user download it.
+2.2 Product Functions
+Program takes CSV as input through streamlit upload, runs a transfer function upon clicking submit. Submit is only available after upload. Once transfer function has run, download button is enabled to download the transferred file.
+2.3 User Characteristics
+Users are tech savvy enough to install python libraries and use streamlit run pythonfile
+2.4 Constraints
+	May not use external APIs, everything hosted locally.
+2.5 Assumptions and Dependencies
+Streamlit gets used, python is installed, pip packages might need to be installed locally.
+Specific Requirements
+Ideally, each requirement should be uniquely identifiable by a number, be as specific as possible and include input and output on how they are used. 
+3.1 Functional Requirements (R = required, T = test, D = documents)
+	R0: MUST be written in python
+R1: MUST take Input csv
+R2: MUST ensure input is csv file
+R3: MUST transpose content of input csv
+R4: MUST have streamlit frontend
+R5: MUST have streamlit upload availability for csv
+R6: MUST enable submit button after upload
+R7: MUST transpose csv after clicking submit
+R8: MUST enable download button after successful transpose run
+R9: MUST delete all temporary files
+R10: CAN show a python log on streamlit box
+T1: MUST have python test coverage for transpose method
+D1: MUST have requirements.txt file
+D2: MUST generate Readme
+D3: MUST include installation tutorial in readme
+3.2 Performance Requirements
+MUST transpose in less than 2 minutes
+3.3 Design Constraints
+	MUST be center aligned
+3.4 Software System Attributes
+MUST use clean code standards
+MUST use consistent naming conventions
+3.6 Deliverables
+			Streamlit run file
+			Optional helper python files
+			Requirements.txt
+			documentation
+
+
+Config:
+ChatEnvConfig.clear_structure: True
+ChatEnvConfig.git_management: False
+ChatEnvConfig.gui_design: True
+ChatEnvConfig.incremental_develop: False
+
+
+Roster:
+Chief Executive Officer, Counselor, Chief Human Resource Officer, Chief Product Officer, Chief Technology Officer, Programmer, Code Reviewer, Software Test Engineer, Chief Creative Officer
+
+Modality:
+application
+
+Ideas:
+
+
+Language:
+ Python
+
+Code_Version:
+2.0
+
+Proposed_images:
+0
+
+Incorporated_images:
+0
+
