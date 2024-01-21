@@ -89,8 +89,7 @@ To get started, follow these steps:
    name:
 
    ```
-   conda create -n ChatDev_conda_env python=3.9 -y
-   conda activate ChatDev_conda_env
+   source activate chatdev
    ```
 
 3. **Install Dependencies:** Move into the `ChatDev` directory and install the necessary dependencies by running:

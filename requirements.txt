@@ -12,5 +12,6 @@ virtualenv==20.23.0
 Werkzeug==2.3.6
 Markdown==3.4.4
 Pillow==10.1.0
-Wikipedia-API==0.6.0
-beautifulsoup4==4.12.2
+litellm==1.11.1
+python-dotenv=1.0.0
+
