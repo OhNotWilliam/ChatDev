@@ -13,7 +13,7 @@
 
 ## 📖 Gambaran
 
-- **ChatDev** berdiri sebagai **perusahaan perangkat lunak virtual** yang beroperasi melalui berbagai **agen cerdas** yang memiliki peran berbeda, termasuk Chief Executive Officer <img src='../online_log/static/figures/ceo.png' height=20>, Chief Product Officer <img src='../online_log/static/figures/cpo.png' height=20>, Chief Technology Officer <img src='../online_log/static/figures/cto.png' height=20>, programmer <img src='../online_log/static/figures/programmer.png' height=20>, reviewer <img src='../online_log/static/figures/reviewer.png' height=20>, tester <img src='../online_log/static/figures/tester.png' height=20>, desainer seni <img src='../online_log/static/figures/designer.png' height=20>. Agen-agen ini membentuk struktur organisasi multi-agen dan bersatu dalam misi "merevolusi dunia digital melalui pemrograman." Agen-agen dalam ChatDev **bekerja sama** dengan berpartisipasi dalam seminar fungsional khusus, termasuk tugas-tugas seperti desain, pemrograman, pengujian, dan dokumentasi.
+- **ChatDev** berdiri sebagai **perusahaan perangkat lunak virtual** yang beroperasi melalui berbagai **agen cerdas** yang memiliki peran berbeda, termasuk Chief Executive Officer <img src='../visualizer/static/figures/ceo.png' height=20>, Chief Product Officer <img src='../visualizer/static/figures/cpo.png' height=20>, Chief Technology Officer <img src='../visualizer/static/figures/cto.png' height=20>, programmer <img src='../visualizer/static/figures/programmer.png' height=20>, reviewer <img src='../visualizer/static/figures/reviewer.png' height=20>, tester <img src='../visualizer/static/figures/tester.png' height=20>, desainer seni <img src='../visualizer/static/figures/designer.png' height=20>. Agen-agen ini membentuk struktur organisasi multi-agen dan bersatu dalam misi "merevolusi dunia digital melalui pemrograman." Agen-agen dalam ChatDev **bekerja sama** dengan berpartisipasi dalam seminar fungsional khusus, termasuk tugas-tugas seperti desain, pemrograman, pengujian, dan dokumentasi.
 - Tujuan utama ChatDev adalah menawarkan kerangka kerja yang **mudah digunakan**, **dapat disesuaikan secara tinggi**, dan **dapat diperluas**, yang didasarkan pada model bahasa besar (Large Language Models atau LLMs) dan menjadi skenario ideal untuk mempelajari kecerdasan kolektif.
 
 <p align="center">
@@ -26,15 +26,15 @@
   <p align="center">
   <img src='../misc/docker.png' width=400>
   </p>
-- 25 September 2023: Mode **Git** kini tersedia, memungkinkan programmer <img src='../online_log/static/figures/programmer.png' height=20> untuk menggunakan Git untuk kontrol versi. Untuk mengaktifkan fitur ini, cukup atur ``"git_management"`` menjadi ``"True"`` di ``ChatChainConfig.json``. Lihat [panduan](wiki.md#mode-git).
+- 25 September 2023: Mode **Git** kini tersedia, memungkinkan programmer <img src='../visualizer/static/figures/programmer.png' height=20> untuk menggunakan Git untuk kontrol versi. Untuk mengaktifkan fitur ini, cukup atur ``"git_management"`` menjadi ``"True"`` di ``ChatChainConfig.json``. Lihat [panduan](wiki.md#mode-git).
   <p align="center">
   <img src='../misc/github.png' width=600>
   </p>
-- 20 September 2023: Mode **Interaksi Manusia-Agen** kini tersedia! Anda dapat terlibat dengan tim ChatDev dengan memainkan peran reviewer <img src='../online_log/static/figures/reviewer.png' height=20> dan memberikan saran kepada programmer <img src='../online_log/static/figures/programmer.png' height=20>; coba ``python3 run.py --task [deskripsi_ide_anda] --config "Manusia"``. Lihat [panduan](wiki.md#interaksi-manusia-agen) dan [contoh](WareHouse/Gomoku_HumanAgentInteraction_20230920135038).
+- 20 September 2023: Mode **Interaksi Manusia-Agen** kini tersedia! Anda dapat terlibat dengan tim ChatDev dengan memainkan peran reviewer <img src='../visualizer/static/figures/reviewer.png' height=20> dan memberikan saran kepada programmer <img src='../visualizer/static/figures/programmer.png' height=20>; coba ``python3 run.py --task [deskripsi_ide_anda] --config "Manusia"``. Lihat [panduan](wiki.md#interaksi-manusia-agen) dan [contoh](WareHouse/Gomoku_HumanAgentInteraction_20230920135038).
   <p align="center">
   <img src='../misc/Human_intro.png' width=600>
   </p>
-- 1 September 2023: Mode **Seni** kini tersedia! Anda dapat mengaktifkan agen desainer <img src='../online_log/static/figures/designer.png' height=20> untuk menghasilkan gambar yang digunakan dalam perangkat lunak; coba ``python3 run.py --task [deskripsi_ide_anda] --config "Seni"``. Lihat [panduan](wiki.md#seni) dan [contoh](WareHouse/gomokugameArtExample_THUNLP_20230831122822).
+- 1 September 2023: Mode **Seni** kini tersedia! Anda dapat mengaktifkan agen desainer <img src='../visualizer/static/figures/designer.png' height=20> untuk menghasilkan gambar yang digunakan dalam perangkat lunak; coba ``python3 run.py --task [deskripsi_ide_anda] --config "Seni"``. Lihat [panduan](wiki.md#seni) dan [contoh](WareHouse/gomokugameArtExample_THUNLP_20230831122822).
 - 28 Agustus 2023: Sistem tersedia untuk publik.
 - 17 Agustus 2023: Versi v1.0.0 siap untuk dirilis.
 - 30 Juli 2023: Pengguna dapat menyesuaikan pengaturan ChatChain, Fase, dan Peran. Selain itu, mode Log online dan mode pemutaran kini didukung.
@@ -183,17 +183,22 @@ Dibuat dengan [contrib.rocks](https://contrib.rocks).
       archivePrefix={arXiv},
       primaryClass={cs.SE}
 }
+
+@misc{qian2023experiential,
+      title={Experiential Co-Learning of Software-Developing Agents}, 
+      author={Chen Qian and Yufan Dang and Jiahao Li and Wei Liu and Weize Chen and Cheng Yang and Zhiyuan Liu and Maosong Sun},
+      year={2023},
+      eprint={2312.17025},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 ```
 
 ## ⚖️ Lisensi
 
 - Lisensi Kode Sumber: Kode sumber proyek kami dilisensikan di bawah Lisensi Apache 2.0. Lisensi ini mengizinkan penggunaan, modifikasi, dan distribusi kode, dengan syarat tertentu yang dijelaskan dalam Lisensi Apache 2.0.
-- Status Proyek Sumber Terbuka: Proyek ini memang bersifat sumber terbuka; namun, desainasi ini terutama ditujukan untuk tujuan non-komersial. Meskipun kami mendorong kolaborasi dan kontribusi dari komunitas untuk tujuan penelitian dan aplikasi non-komersial, penting untuk diingat bahwa penggunaan komponen proyek untuk tujuan komersial memerlukan perjanjian lisensi terpisah.
 - Lisensi Data: Data terkait yang digunakan dalam proyek kami dilisensikan di bawah CC BY-NC 4.0. Lisensi ini secara eksplisit mengizinkan penggunaan non-komersial data tersebut. Kami ingin menekankan bahwa model-model yang dilatih menggunakan dataset ini harus tunduk secara ketat pada pembatasan penggunaan non-komersial dan hanya boleh digunakan untuk tujuan penelitian.
 
-## 🌟 Riwayat Bintang
-
-[![Grafik Riwayat Bintang](https://api.star-history.com/svg?repos=openbmb/chatdev&type=Date)](https://star-history.com/#openbmb/chatdev&Date)
 
 ## 🤝 Pengakuan
 

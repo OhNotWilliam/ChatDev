@@ -12,7 +12,7 @@
 
 ## 📖 Genel Bakış
 
-- **ChatDev**, farklı rolleri olan çeşitli **akıllı ajanlar** aracılığıyla işleyen bir **sanal yazılım şirketi** olarak duruyor, bu roller arasında İcra Kurulu Başkanı <img src='../online_log/static/figures/ceo.png' height=20>, Baş Ürün Sorumlusu <img src='../online_log/static/figures/cpo.png' height=20>, Baş Teknoloji Sorumlusu <img src='../online_log/static/figures/cto.png' height=20>, programcı <img src='../online_log/static/figures/programmer.png' height=20>, inceleyici <img src='../online_log/static/figures/reviewer.png' height=20>, testçi <img src='../online_log/static/figures/tester.png' height=20>, sanat tasarımcısı <img src='../online_log/static/figures/designer.png' height=20> bulunur. Bu ajanlar çoklu ajan organizasyon yapısı oluşturur ve "programlama yoluyla dijital dünyayı devrimleştirmek" misyonuyla birleşirler. ChatDev içindeki ajanlar, özel işlevsel seminerlere katılarak işbirliği yaparlar, bu seminerler tasarım, kodlama, test etme ve belgeleme gibi görevleri içerir.
+- **ChatDev**, farklı rolleri olan çeşitli **akıllı ajanlar** aracılığıyla işleyen bir **sanal yazılım şirketi** olarak duruyor, bu roller arasında İcra Kurulu Başkanı <img src='../visualizer/static/figures/ceo.png' height=20>, Baş Ürün Sorumlusu <img src='../visualizer/static/figures/cpo.png' height=20>, Baş Teknoloji Sorumlusu <img src='../visualizer/static/figures/cto.png' height=20>, programcı <img src='../visualizer/static/figures/programmer.png' height=20>, inceleyici <img src='../visualizer/static/figures/reviewer.png' height=20>, testçi <img src='../visualizer/static/figures/tester.png' height=20>, sanat tasarımcısı <img src='../visualizer/static/figures/designer.png' height=20> bulunur. Bu ajanlar çoklu ajan organizasyon yapısı oluşturur ve "programlama yoluyla dijital dünyayı devrimleştirmek" misyonuyla birleşirler. ChatDev içindeki ajanlar, özel işlevsel seminerlere katılarak işbirliği yaparlar, bu seminerler tasarım, kodlama, test etme ve belgeleme gibi görevleri içerir.
 - ChatDev'in asıl amacı, büyük dil modellerine (LLM'ler) dayanan ve kolektif zeka çalışmaları için ideal bir senaryo olarak hizmet veren, **kullanımı kolay**, **yüksek özelleştirilebilir** ve **genişletilebilir** bir çerçeve sunmaktır.
 
 <p align="center">
@@ -25,15 +25,15 @@
   <p align="center">
   <img src='../misc/docker.png' width=400>
   </p>
-- 25 Eylül 2023: **Git** modu artık kullanılabilir durumda, programcının <img src='../online_log/static/figures/programmer.png' height=20> sürüm kontrolü için Git'i kullanmasına izin verir. Bu özelliği etkinleştirmek için sadece ``ChatChainConfig.json`` içinde ``"git_management"`` değerini ``"True"`` olarak ayarlamanız yeterlidir. [Kılavuza](wiki.md#git-mode) bakınız.
+- 25 Eylül 2023: **Git** modu artık kullanılabilir durumda, programcının <img src='../visualizer/static/figures/programmer.png' height=20> sürüm kontrolü için Git'i kullanmasına izin verir. Bu özelliği etkinleştirmek için sadece ``ChatChainConfig.json`` içinde ``"git_management"`` değerini ``"True"`` olarak ayarlamanız yeterlidir. [Kılavuza](wiki.md#git-mode) bakınız.
   <p align="center">
   <img src='../misc/github.png' width=600>
   </p>
-- 20 Eylül 2023: **İnsan-Ajan-İletişimi** modu artık kullanılabilir! ChatDev ekibine katılarak inceleyici <img src='../online_log/static/figures/reviewer.png' height=20> rolünü üstlenebilir ve programcıya <img src='../online_log/static/figures/programmer.png' height=20> önerilerde bulunabilirsiniz; ``python3 run.py --task [fikrinizin açıklaması] --config "İnsan"`` komutunu deneyin. [Kılavuza](wiki.md#human-agent-interaction) ve [örneğe](WareHouse/Gomoku_HumanAgentInteraction_20230920135038) bakınız.
+- 20 Eylül 2023: **İnsan-Ajan-İletişimi** modu artık kullanılabilir! ChatDev ekibine katılarak inceleyici <img src='../visualizer/static/figures/reviewer.png' height=20> rolünü üstlenebilir ve programcıya <img src='../visualizer/static/figures/programmer.png' height=20> önerilerde bulunabilirsiniz; ``python3 run.py --task [fikrinizin açıklaması] --config "İnsan"`` komutunu deneyin. [Kılavuza](wiki.md#human-agent-interaction) ve [örneğe](WareHouse/Gomoku_HumanAgentInteraction_20230920135038) bakınız.
   <p align="center">
   <img src='../misc/Human_intro.png' width=600>
   </p>
-- 1 Eylül 2023: **Sanat** modu şimdi kullanılabilir! Yazılımda kullanılan görselleri oluşturmak için tasarımcı ajanını <img src='../online_log/static/figures/designer.png' height=20> etkinleştirebilirsiniz; ``python3 run.py --task [fikrinizin açıklaması] --config "Sanat"`` komutunu deneyin. [Kılavuza](wiki.md#art) ve [örneğe](WareHouse/gomokugameArtExample_THUNLP_20230831122822) bakınız.
+- 1 Eylül 2023: **Sanat** modu şimdi kullanılabilir! Yazılımda kullanılan görselleri oluşturmak için tasarımcı ajanını <img src='../visualizer/static/figures/designer.png' height=20> etkinleştirebilirsiniz; ``python3 run.py --task [fikrinizin açıklaması] --config "Sanat"`` komutunu deneyin. [Kılavuza](wiki.md#art) ve [örneğe](WareHouse/gomokugameArtExample_THUNLP_20230831122822) bakınız.
 - 28 Ağustos 2023: Sistem halka açık durumda.
 - 17 Ağustos 2023: v1.0.0 sürümü hazırlandı.
 - 30 Temmuz 2023: Kullanıcılar ChatChain, Aşama ve Rol ayarlarını özelleştirebilirler. Ayrıca, hem çevrimiçi Log modu hem de yeniden oynatma mod
@@ -185,17 +185,22 @@ Daha ayrıntılı bilgi için [Wiki](wiki.md)'mize başvurabilirsiniz, burada ş
       archivePrefix={arXiv},
       primaryClass={cs.SE}
 }
+
+@misc{qian2023experiential,
+      title={Experiential Co-Learning of Software-Developing Agents}, 
+      author={Chen Qian and Yufan Dang and Jiahao Li and Wei Liu and Weize Chen and Cheng Yang and Zhiyuan Liu and Maosong Sun},
+      year={2023},
+      eprint={2312.17025},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 ```
 
 ## ⚖️ Lisans
 
 - Kaynak Kodu Lisansı: Projemizin kaynak kodu Apache 2.0 Lisansı altında lisanslanmıştır. Bu lisans, belirli koşullar dahilinde kodun kullanımını, değiştirilmesini ve dağıtılmasını izin verir.
-- Proje Açık Kaynak Durumu: Proje gerçekten açık kaynaktır; ancak bu tanım öncelikle ticari olmayan amaçlar için tasarlanmıştır. Topluluktan işbirliği ve katkılara teşvik etsek de, projenin bileşenlerinin ticari amaçlar için kullanılması ayrı lisans anlaşmalarını gerektirir.
 - Veri Lisansı: Projemizde kullanılan ilgili veri CC BY-NC 4.0 lisansı altında lisanslanmıştır. Bu lisans verinin ticari olmayan kullanımına açıkça izin verir. Bu veri kullanan modellerin kesinlikle ticari kullanım kısıtlamasına uyması ve sadece araştırma amaçları için kullanılması gerektiğini vurgulamak isteriz.
 
-## 🌟 Yıldız Geçmişi
-
-[![Yıldız Geçmişi Grafiği](https://api.star-history.com/svg?repos=openbmb/chatdev&type=Date)](https://star-history.com/#openbmb/chatdev&Date)
 
 ## 🤝 Teşekkürler
 
